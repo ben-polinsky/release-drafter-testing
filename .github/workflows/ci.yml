@@ -15,5 +15,7 @@ jobs:
 
     - name: Release Drafter
       uses: release-drafter/release-drafter@v6.0.0
+      with: 
+        commitish: ref/heads/main
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
